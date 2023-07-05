@@ -1,0 +1,66 @@
+/* Reset and Common Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  background-color: #38242e;
+}
+
+html {
+    font-size: 62.5%;
+}
+/* End of Reset and Common Styles */
+
+/* Start of Section 1 */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, .2) rgba(255, 255, 255, .3));
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.persion-name{
+    font-size: 6rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #5e3966;
+    padding: 0 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: .3rem solid #fff;
+    text-shadow: .2rem .2rem .1rem #555;
+    transform: skew(-2deg);
+}
+
+.section-1-heading {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #5e3966;
+  margin: 2rem 0;
+  padding: .5rem 3rem;
+  letter-spacing: .3rem;
+  transform: skew(-2deg);
+}
+
+.section-1-btn {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #fff;
+  border: .3rem solid #333;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+/* End of Section 1 */
