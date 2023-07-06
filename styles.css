@@ -8,11 +8,17 @@
   list-style-type: none;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  background-color: #38242e;
+  background-color: #443d4e;
 }
 
 html {
     font-size: 62.5%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* End of Reset and Common Styles */
 
@@ -32,7 +38,7 @@ html {
     font-size: 6rem;
     font-weight: 700;
     color: #fff;
-    background-color: #5e3966;
+    background-color: #a3b4bc;
     padding: 0 3rem;
     text-align: center;
     text-transform: uppercase;
@@ -45,7 +51,7 @@ html {
 .section-1-heading {
   font-size: 2rem;
   color: #fff;
-  background-color: #5e3966;
+  background-color: #a3b4bc;
   margin: 2rem 0;
   padding: .5rem 3rem;
   letter-spacing: .3rem;
@@ -55,12 +61,91 @@ html {
 .section-1-btn {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #333;
-  background-color: #fff;
-  border: .3rem solid #333;
+  color: #443d4e;
+  background-color: #7d91b4;
+  border: .3rem solid #fff;
   padding: .5rem 1rem;
   text-transform: uppercase;
   letter-spacing: .3rem;
 }
 
 /* End of Section 1 */
+
+/* Start of Navbar */
+
+.navbar {
+  width: 100%;
+  height: 4rem;
+  background-color: #a3b4bc;
+  padding: 0 3rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+
+.navbar-link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #7d91b4;
+  margin: 0 3rem;
+  text-transform: uppercase; 
+  letter-spacing: .3rem;
+  background-color: #a3b4bc;
+  position: relative;
+  transition: color .2s;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-link::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  right: -15%;
+  bottom: -0.3rem;
+  transition: width .2s;
+}
+
+.navbar-link:hover::before {
+  width: 130%;
+}
+/* End of Navbar*/
+
+/* Start of Section 2 */
+
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  padding: 15rem 0 10rem 0;
+  background-color: #443d4e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-2-heading {
+  font-size: 5rem;
+  color: #7d91b4;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  margin-bottom: 15rem;
+  border-bottom: .3rem solid #7d91b4;
+  text-shadow: .2rem .2rem .1rem #555;
+}
+
+.logos {
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+/* End of Section 2 */
+
+/* Start of Section 3 */
+
+/* End of Section 3 */
