@@ -13,9 +13,9 @@
 <body>
     <div class="container">
         <!-- Section 1 -->
-        <section class="section-1 center">
+        <section class="section-1 center" id="section-1">
             <h1 class="persion-name">Elwood Bond</h1>
-            <h3 class="section-1-heading">
+            <h3 class="section-heading">
                 Web Developer
             </h3>
             <a href="#" class="section-1-btn">Projects</a>
@@ -24,18 +24,18 @@
 
         <!-- Navbar -->
         <nav class="navbar center">
-            <a href="#" class="navbar-link">Home</a>
-            <a href="#" class="navbar-link">About</a>
-            <a href="#" class="navbar-link">Portfolio</a>
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="section-1" class="navbar-link">Home</a>
+            <a href="section-2" class="navbar-link">About</a>
+            <a href="section-3" class="navbar-link">Portfolio</a>
+            <a href="section-4" class="navbar-link">Contact</a>
         </nav>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <!-- End of Navbar-->
 
         <!-- Section 2 -->
-        <section class="section-2 ">
-        <h1 class="section-2-heading">Skills</h1>
+        <section class="section-2 " id="section-2">
+        <h1 class="section-heading section-2-heading">Skills</h1>
         <div class="logos">
                 <li><i class="fa-brands fa-html5  fa-10x" style="color: #ffffff;"></i></li>
                 <li><i class="fa-brands fa-css3-alt fa-10x" style="color: #ffffff;"></i></li>
@@ -47,43 +47,58 @@
         </div>
         <!-- End of Section 2-->
 
+
+
+
         <!-- Section 3 -->
-        <section class="section-3">
-            <h1 class="section-3-heading">Projects</h1>
-            <div class="class projects-wrapper">
-                <div class="project">
-                    <div class="project-text">
-                        <h2 class="h2 project-name">IMDb Clone</h2>
-                        <h4 class="project-technologies">TailwindCSS, Next.JS, IMDb API, React</h4>
-                        <img src="images/imdb-thumb.png" class="project-img">
-                        <a href="#" class="project-link">View Project</a>
-                        <a href="#" class="project-link">View Code</a>
-                    </div>
+        <section class="section-3" id="section-3">
+            <h1 class="section-heading section-3-heading">My Projects</h1>
+            <div class="projects-wrapper center">
+              <div class="project">
+                <div class="project-text">
+                    <h2 class="h2 project-name">IMDb Clone</h2>
+                    <h4 class="project-technologies">TailwindCSS, Next.JS, IMDb API, React</h4>
+                    <img src="images/imdb-thumb.png" class="project-img">
+                    <a href="#" class="project-link">View Project</a>
+                    <a href="#" class="project-link">View Code</a>
                 </div>
                 <div class="project-text">
                     <h2 class="h2 project-name">Drum Machine</h2>
                     <h4 class="project-technologies"></h4>
-                    <img src="images/imdb-clone.png" class="project-img">
-                    <a href="#" class="project-link">View Project</a>
-                    <a href="#" class="project-link">View Code</a>
+                    <img src="images/drummachine.png" class="project-img">
+                    <a href="https://vercel.com/elwoodbond/drum-machine" class="project-link">View Project</a>
+                    <a href="https://github.com/Elwoodbond/DrumMachine" class="project-link">View Code</a>
+              </div>
+              <div class="project">
+                <div class="project-text">
+                    <h2 class="h2 project-name">Newsletter Signup</h2>
+                    <h4 class="project-technologies">HTML, CSS, JavaScript, MailChimp API</h4>
+                    <img src="images/newsletter.png" class="project-img">
+                    <a href="https://newsletter1-05dc48fbccb6.herokuapp.com/" class="project-link">View Project</a>
+                    <a href="https://github.com/Elwoodbond/newsletter-signup" class="project-link">View Code</a>
                 </div>
             </div>
-            <div class="project-text">
-                <h2 class="h2 project-name">IMDb Clone</h2>
-                <h4 class="project-technologies">TailwindCSS, Next.JS, IMDb API, React</h4>
-                <img src="images/imdb-clone.png" class="project-img">
-                <a href="#" class="project-link">View Project</a>
-                <a href="#" class="project-link">View Code</a>
-            </div>
-        </div>
-            </div>
-        </section>
-
+          </section>
 
         <!-- End of Section 3-->
+
+
+        <!-- Footer -->
+<footer class="section-5" id="footer">
+    <div class="social-media">
+        <div class="link">
+            <a href="https://github.com/Elwoodbond"><i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a>
+            <a href="www.linkedin.com/in/elwood-bond-038b9b1a6"><i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+        </div>
+    </div>
+</footer>
+        <!-- End of Footer-->
     </div>
 
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
