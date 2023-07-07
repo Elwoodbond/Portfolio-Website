@@ -74,63 +74,40 @@ html {
 
 /* Start of Navbar */
 
-.navbar {
-  width: 100%;
-  height: 4rem;
-  background-color: #a3b4bc;
-  padding: 0 3rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #443d4e;
+  overflow: hidden;
   position: absolute;
   z-index: 300;
-}
-
-.sticky {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  z-index: 100;
-  animation: slideDown .5s;
 }
 
-.navbar-link {
-  font-size: 1.7rem;
-  font-weight: 600;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
   color: #7d91b4;
-  margin: 0 3rem;
-  text-transform: uppercase; 
-  letter-spacing: .3rem;
-  background-color: #a3b4bc;
-  position: relative;
-  transition: color .2s;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.change.navbar-link {
-  color: #fff;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #7d91b4;
+  color: #443d4e;
 }
 
-.navbar-link:hover {
-  color: #fff;
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #7d91b4;
+  color: white;
 }
 
-.navbar-link::before {
-  content: "";
-  width: 0;
-  height: 0.2rem;
-  background-color: #fff;
-  position: absolute;
-  right: -15%;
-  bottom: -0.3rem;
-  transition: width .2s;
-}
 
-.change.navbar-link::before {
-  width: 130%;
-}
-
-.navbar-link:hover::before {
-  width: 130%;
-}
 /* End of Navbar*/
 
 /* Start of Section 2 */
@@ -138,7 +115,7 @@ html {
 .section-2 {
   width: 100%;
   height: 100vh;
-  padding: 15rem 0 10rem 0;
+  padding: 5rem 0;
   background-color: #443d4e;
   display: flex;
   flex-direction: column;
@@ -168,151 +145,109 @@ html {
 /* End of Section 2 */
 
 /* Start of Section 3 */
+
 .section-3 {
   width: 100%;
-  height: 100%;
-  padding: 10rem 0;
-  background-color: #a3b4bc;
+  height: 100vh;
+  padding: 5rem 0 0rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.projects-wrapper {
-  width: 80%;
+.section-3-heading {
+  font-size: 5rem;
+  color: #7d91b4;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  margin-bottom: 5rem;
+  border-bottom: .3rem solid #7d91b4;
+  text-shadow: .2rem .2rem .1rem #555;
+}
+
+.project-cards {
+  width: 100%;
+  padding: 0 3rem;
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem #555;
-}
-
-.project-text {
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
   text-align: center;
-  letter-spacing: 0.1rem;
-  top: -10rem;
-  transition: top .2s;
-  position: relative;
-  top: -10rem;
+}
+
+h1 {
+  color: #7d91b4;
+  font-size: 24px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
 }
 
 
 
-.project-name {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #443d4e;
-  text-transform: uppercase;
-}
-
-.project-technologies {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #443d4e;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  margin-bottom: 1rem;
-}
-
-.project-img {
-  width: 600px;
-  height: 337px;
-  transition: opacity .2s;
-}
-
-.project-link {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #443d4e;
-  letter-spacing: .1rem;
-  border: 3rem solid #443d4e;
-  padding: 0 1rem;
-  background-color: #fff;
-  bottom: -5rem;
-}
-
-
-/* End of Section  3 */
+/* End of Section 3 */
 
 /* Start of Section 4 */
 
 
 .section-4 {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-color: #443d4e;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 10rem;
 }
 
 .section-4-heading {
+  font-size: 5rem;
   color: #fff;
   box-shadow: none;
   border-color: #fff;
-  margin-bottom: 5rem;
+  text-shadow: .2rem .2rem .1rem #555;
+  margin-top: 75rem;
+  margin-bottom: 3rem;
+}
+  
+.social-media a {
+    font-size: 3rem;
+    color: #fff;
+    margin: 0 4rem;
 }
 
-.contact-form {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.link {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15rem;
 }
 
-.contact-form input, .contact-form textarea {
-width: 100%;
-padding: .5rem;
-margin: 1rem 0;
-background-color: #a3b4bc;
-font-size: 1.5rem;
-border: .2rem solid #fff;
-color: #555;
-}
-
-.contact-form textarea {
-  height: 10rem;
-  max-height: 15rem;
-  max-width: 100%;
-}
-
-.contact-form .contact-form-btn {
-  background-color: #443d4e;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  font-size: 1.5rem;
-}
 
 /* End of Section 4 */
 
-/* Start of Footer */
 
-.footer {
-  width: 100%;
-  height: 10rem;
-  background-color: #443d4e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.social-media {
-margin-top: 5rem;
-margin-bottom: 5rem;
-}
 
-.social-media a {
-  font-size: 3rem;
-  color: #fff;
-  margin: 0 1rem;
-}
-/* End of Footer */
+
 

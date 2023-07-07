@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<>
     <div class="container">
         <!-- Section 1 -->
         <section class="section-1 center" id="section-1">
@@ -18,19 +18,21 @@
             <h3 class="section-heading">
                 Web Developer
             </h3>
-            <a href="#" class="section-1-btn">Projects</a>
         </section>
         <!-- End of Section 1 -->
 
         <!-- Navbar -->
-        <nav class="navbar center">
-            <a href="section-1" class="navbar-link">Home</a>
-            <a href="section-2" class="navbar-link">About</a>
-            <a href="section-3" class="navbar-link">Portfolio</a>
-            <a href="section-4" class="navbar-link">Contact</a>
-        </nav>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="topnav">
+          <a class="active" href="#section-1">Home</a>
+          <a href="#section-2">Skills</a>
+          <a href="#section-3">Projects</a>
+          <a href="#section-4">Contact</a>
+          <a href="https://github.com/Elwoodbond" target="_blank">Github</a>
+        </div>
+
+
+
         <!-- End of Navbar-->
 
         <!-- Section 2 -->
@@ -45,6 +47,7 @@
                 <li><i class="fa-brands fa-node-js fa-10x" style="color: #ffffff;"></i></li>
                 <li><i class="fa-brands fa-git-alt fa-10x" style="color: #ffffff;"></i></li>
         </div>
+        </section>
         <!-- End of Section 2-->
 
 
@@ -53,50 +56,54 @@
         <!-- Section 3 -->
         <section class="section-3" id="section-3">
             <h1 class="section-heading section-3-heading">My Projects</h1>
-            <div class="projects-wrapper center">
-              <div class="project">
-                <div class="project-text">
-                    <h2 class="h2 project-name">IMDb Clone</h2>
-                    <h4 class="project-technologies">TailwindCSS, Next.JS, IMDb API, React</h4>
-                    <img src="images/imdb-thumb.png" class="project-img">
-                    <a href="#" class="project-link">View Project</a>
-                    <a href="#" class="project-link">View Code</a>
-                </div>
-                <div class="project-text">
-                    <h2 class="h2 project-name">Drum Machine</h2>
-                    <h4 class="project-technologies"></h4>
-                    <img src="images/drummachine.png" class="project-img">
-                    <a href="https://vercel.com/elwoodbond/drum-machine" class="project-link">View Project</a>
-                    <a href="https://github.com/Elwoodbond/DrumMachine" class="project-link">View Code</a>
+            <div class="project-cards">
+            <div class="card">
+                <img src="images/imdb-thumb.png" alt="John" style="width:100%">
+                <h1>IMDb Clone</h1>
+                <p class="title">TailwindCSS, Next.JS, IMDb API, React</p>
+                <a href="https://imdb-wheat.vercel.app/" class="project-link" target="_blank">View Project | </a>
+                <a href="https://github.com/Elwoodbond/imdb-clone" class="project-link" target="_blank"> View Code</a>
               </div>
-              <div class="project">
-                <div class="project-text">
-                    <h2 class="h2 project-name">Newsletter Signup</h2>
-                    <h4 class="project-technologies">HTML, CSS, JavaScript, MailChimp API</h4>
-                    <img src="images/newsletter.png" class="project-img">
-                    <a href="https://newsletter1-05dc48fbccb6.herokuapp.com/" class="project-link">View Project</a>
-                    <a href="https://github.com/Elwoodbond/newsletter-signup" class="project-link">View Code</a>
-                </div>
+
+              <div class="card">
+                <img src="images/drummachine.png" alt="John" style="width: 100%">
+                <h1>Web Drum Machine</h1>
+                <p class="title">HTML, CSS, JavaScript, JQuery</p>
+
+                <a href="https://drum-machine-xi.vercel.app/" class="project-link" target="_blank">View Project | </a>
+                <a href="https://github.com/Elwoodbond/DrumMachine" class="project-link" target="_blank"> View Code</a>
+              </div>
+
+              <div class="card">
+                <img src="images/newsletter.png" alt="John" style="width: 100%">
+                <h1>Newsletter Signup</h1>
+                <p class="title">HTML, CSS, JavaScript, MailChimp API</p>
+                <a href="https://newsletter1-05dc48fbccb6.herokuapp.com/" class="project-link" target="_blank">View Project | </a>
+                <a href="https://github.com/Elwoodbond/newsletter-signup" class="project-link" target="_blank"> View Code</a>
+              </div>
             </div>
           </section>
 
+
         <!-- End of Section 3-->
 
-
-        <!-- Footer -->
-<footer class="section-5" id="footer">
-    <div class="social-media">
-        <div class="link">
-            <a href="https://github.com/Elwoodbond"><i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a>
-            <a href="www.linkedin.com/in/elwood-bond-038b9b1a6"><i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
-        </div>
+        <!-- Section 4 -->
+        <section class="section-4" id="section-4">
+            <h1 class="section-heading section-4-heading">Contact Me</h1>
+            <div class="social-media">
+                <div class="link">
+                    <a href="https://github.com/Elwoodbond" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a>
+                    <a href="https://www.linkedin.com/in/elwood-bond-038b9b1a6/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+                    <a href ="mailto: elwood.bond@gmail.com" target="_blank"><i class="fa-solid fa-envelope  fa-2x" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+          </section>
+        <!-- End of Section 4-->
+    
     </div>
-</footer>
-        <!-- End of Footer-->
-    </div>
-
 
     <script src="script.js"></script>
+
 </body>
 </html>
 
