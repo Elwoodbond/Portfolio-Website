@@ -220,7 +220,8 @@ button:hover, a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .section-4-heading {
@@ -229,7 +230,7 @@ button:hover, a:hover {
   box-shadow: none;
   border-color: #fff;
   text-shadow: .2rem .2rem .1rem #555;
-  margin-top: 75rem;
+  margin-top: 200rem;
   margin-bottom: 3rem;
 }
   
